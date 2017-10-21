@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+   <xsd:element name="CaseReportForm">
+      <xsd:complexType>
+         <xsd:sequence>
+            <xsd:element name="title" type="xsd:string"/>
+            <xsd:element name="subtitle" type="xsd:string"/>
+            <xsd:pattern name="PatientID" value="[0-9]\-[01-99]"/>
+            <xsd:element name="section" type="xsd:string"/>
+            <xsd:element name="gender" maxOccurs="choice">
+               <xsd:complexType mixed="true">
+                  <xsd:attribute name="type" use="required">
+                     <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                           <xsd:enumeration value="Male"/>
+                           <xsd:enumeration value="Female"/>
+                        </xsd:restriction>
+                     </xsd:simpleType>
+                  </xsd:attribute>
+               </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="dob" type="xsd:date"/>
+            <xsd:element name="age" type="xsd:decimal"/>
+            <xsd:element name="height" type="xsd:decimal"/>
+            <xsd:element name="height" type="xsd:decimal"/>
+            <xsd:element name="gender" maxOccurs="choice">
+               <xsd:complexType mixed="true">
+                  <xsd:attribute name="type" use="required">
+                     <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                           <xsd:enumeration value="Caucasian"/>
+                           <xsd:enumeration value="Black"/>
+                           <xsd:enumeration value="Asian"/>
+                           <xsd:enumeration value="Hispanic"/>
+                           <xsd:enumeration value="Other"/>
+                        </xsd:restriction>
+                     </xsd:simpleType>
+                  </xsd:attribute>
+               </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="Question1" maxOccurs="choice">
+               <xsd:complexType mixed="true">
+                  <xsd:attribute name="type" use="required">
+                     <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                           <xsd:enumeration value="Yes"/>
+                           <xsd:enumeration value="No"/>
+                           <xsd:enumeration value="Unknown"/>
+                           <xsd:enumeration value="NA"/>
+                        </xsd:restriction>
+                     </xsd:simpleType>
+                  </xsd:attribute>
+               </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="Question2" maxOccurs="choice">
+               <xsd:complexType mixed="true">
+                  <xsd:attribute name="type" use="required">
+                     <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                           <xsd:enumeration value="Yes"/>
+                           <xsd:enumeration value="No"/>
+                           <xsd:enumeration value="Unknown"/>
+                           <xsd:enumeration value="NA"/>
+                        </xsd:restriction>
+                     </xsd:simpleType>
+                  </xsd:attribute>
+               </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="Question3" maxOccurs="choice">
+               <xsd:complexType mixed="true">
+                  <xsd:attribute name="type" use="required">
+                     <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                           <xsd:enumeration value="Yes"/>
+                           <xsd:enumeration value="No"/>
+                           <xsd:enumeration value="Unknown"/>
+                           <xsd:enumeration value="NA"/>
+                        </xsd:restriction>
+                     </xsd:simpleType>
+                  </xsd:attribute>
+               </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="Question4" maxOccurs="choice">
+               <xsd:complexType mixed="true">
+                  <xsd:attribute name="type" use="required">
+                     <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                           <xsd:enumeration value="Yes"/>
+                           <xsd:enumeration value="No"/>
+                           <xsd:enumeration value="Unknown"/>
+                           <xsd:enumeration value="NA"/>
+                        </xsd:restriction>
+                     </xsd:simpleType>
+                  </xsd:attribute>
+               </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="Question5" type="xsd:decimal"/>
+            <xsd:element name="Question6" maxOccurs="choice">
+               <xsd:complexType mixed="true">
+                  <xsd:attribute name="type" use="required">
+                     <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                           <xsd:enumeration value="Yes"/>
+                           <xsd:enumeration value="No"/>
+                           <xsd:enumeration value="Unknown"/>
+                           <xsd:enumeration value="NA"/>
+                        </xsd:restriction>
+                     </xsd:simpleType>
+                  </xsd:attribute>
+               </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="Question7" maxOccurs="choice">
+               <xsd:complexType mixed="true">
+                  <xsd:attribute name="type" use="required">
+                     <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                           <xsd:enumeration value="Yes"/>
+                           <xsd:enumeration value="No"/>
+                           <xsd:enumeration value="Unknown"/>
+                           <xsd:enumeration value="NA"/>
+                        </xsd:restriction>
+                     </xsd:simpleType>
+                  </xsd:attribute>
+               </xsd:complexType>
+            </xsd:element>
+            <xsd:element name="Question7" maxOccurs="choice">
+               <xsd:complexType mixed="true">
+                  <xsd:attribute name="type" use="required">
+                     <xsd:simpleType>
+                        <xsd:restriction base="xsd:string">
+                           <xsd:enumeration type="xsd:date"/>
+                           <xsd:enumeration value="Unknown"/>
+                           <xsd:enumeration value="NA"/>
+                        </xsd:restriction>
+                     </xsd:simpleType>
+                  </xsd:attribute>
+               </xsd:complexType>
+            </xsd:element>
+              <xsd:element name="Question8" type="xsd:decimal"/>
+         </xsd:sequence>
+      </xsd:complexType>
+   </xsd:element>
+</xsd:schema>

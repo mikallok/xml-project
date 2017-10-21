@@ -1,0 +1,78 @@
+title {
+  font: 100% arial, helvetica, sans-serif;
+  font-size: 1.5em;
+  font-weight: 100;
+  padding-bottom: 0px;
+}
+
+subtitle {
+  font: arial, helvetica, sans-serif;
+  color: #286090;
+  font-weight:bolder;
+  font-size: 1.1em;
+  padding-top: 2%
+}
+
+section {
+font-family: Arial, Helvetica, sans-serif;
+  color: #Black;
+	font-weight: 600;
+	display: block;
+	margin-top: 3%;
+  font-size: 90%;
+  margin-left: 3%;
+}
+
+CaseReportForm {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 600px;
+  display: block;
+  padding: 10pt;
+  margin: 5px;
+  text-align: left;
+}
+
+PatientID {
+	font-weight: bold;
+	display: block;
+	margin 3%;
+  padding-top: 2%;
+  font-size: 100%;
+}
+PatientID:before {content: "Patient ID: "}
+
+gender, age, height, weight, ethnicity, Question1, Question2,
+ Question3, Question4, Question5, Question6, Question7, Question9 {
+	font-size: 90%;
+	display: block;
+  margin-left: 6%;
+  margin-top: 2%;
+  margin-bottom: 1%;
+}
+gender:before {content: attr(type) "Gender: "}
+age:before {content: attr(type) "Age: "}
+height:before {content: attr(type) "Height: "}
+height:after {content: attr(type) " cm "}
+weight:before {content: attr(type) "Weight: "}
+weight:after {content: attr(type) " kg "}
+ethnicity:before {content: attr(type) "Race/ethnicity: "}
+Question1:before {content: attr(type) "Prior venous catheter for dialysis? "}
+Question2:before {content: attr(type) "Was venous catheter placed within the last 30 days? "}
+Question3:before {content: attr(type) "Prior dialysis shunt placement? "}
+Question4:before {content: attr(type) "Prior hemodialysis? "}
+Question5:before {content: attr(type) "Duration of hemodialysis prior to this study? "}
+Question5:after {content: attr(type) " months"}
+Question6:before {content: attr(type) "Prior peritoneal dialysis? "}
+Question7:before {content: attr(type) "Prior treatment in target limb? "}
+Question9:before {content: attr(type) "Total number of prior arteriovenus grafts or fistulas:  "}
+
+dob, Question8 {
+  font-size: 90%;
+	display: inline;
+  margin-left: 6%;
+  margin-top: 2%;
+  margin-bottom: 1%;
+}
+dob:before {content: attr(type) "Date of Birth: "}
+Question8:before {content: attr(type) "Date of Last Dialysis: "}
+}
