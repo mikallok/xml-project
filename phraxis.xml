@@ -2,10 +2,10 @@
 <?xml-stylesheet type="text/css" href="phraxis_style.css"?>
 <CaseReportForm xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="phraxis.xsd">
 
-<head>
+
   <title>InterGraft Study:</title>
   <subtitle>Baseline Demography and Clinical History Form</subtitle>
-</head>
+  <case>
   <PatientID>1-01</PatientID>
   <section>Part I. Demographics</section>
 	<gender>Male</gender>
@@ -24,4 +24,25 @@
   <Question7>No</Question7>
   <Question8>2017-10-15</Question8>
   <Question9>1</Question9>
+</case>
+<case>
+<PatientID>1-02</PatientID>
+<section>Part I. Demographics</section>
+<gender>Female</gender>
+<dob>1970-09-16</dob>
+<age>47</age>
+<height>160</height>
+<weight>122</weight>
+<ethnicity>Asian</ethnicity>
+<section>Part II. Dialysis History</section>
+<Question1>Yes</Question1>
+<Question2>No</Question2>
+<Question3>No</Question3>
+<Question4>Yes</Question4>
+<Question5>30</Question5>
+<Question6>No</Question6>
+<Question7>Yes</Question7>
+<Question8>2017-10-20</Question8>
+<Question9>0</Question9>
+</case>
 </CaseReportForm>

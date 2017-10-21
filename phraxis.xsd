@@ -5,6 +5,7 @@
          <xsd:sequence>
             <xsd:element name="title" type="xsd:string"/>
             <xsd:element name="subtitle" type="xsd:string"/>
+            <xsd:element name="case"/>
             <xsd:pattern name="PatientID" value="[0-9]\-[01-99]"/>
             <xsd:element name="section" type="xsd:string"/>
             <xsd:element name="gender" maxOccurs="choice">
